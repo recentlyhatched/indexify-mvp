@@ -1,0 +1,3 @@
+contracts/target/
+.stellar/
+node_modules/
