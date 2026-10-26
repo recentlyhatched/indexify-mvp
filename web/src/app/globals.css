@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+/* PensionBridge Africa — institutional light theme: white surfaces, lavender canvas, royal-violet primary. */
+@theme inline {
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-mono-face);
+
+  --color-primary: #4a2bb0;
+  --color-primary-600: #3c2193;
+  --color-primary-100: #e6e0fa;
+  --color-primary-50: #f3f0fd;
+
+  --color-ink: #17142c;
+  --color-body: #3d3a52;
+  --color-muted: #6c6983;
+  --color-faint: #a3a1b5;
+  --color-line: #e8e6f0;
+  --color-paper: #f5f4fa;
+
+  --color-success: #15803d;
+  --color-success-500: #22a559;
+  --color-success-50: #e9f7ee;
+  --color-warning: #b45309;
+  --color-warning-500: #f59e0b;
+  --color-warning-50: #fef4e2;
+  --color-danger: #c42b2b;
+  --color-danger-50: #fdecec;
+  --color-info: #1d4ed8;
+  --color-info-50: #ebf1fe;
+
+  --color-kenya-green: #1f8a4c;
+  --color-kenya-gold: #f2b705;
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+}
+
+::selection {
+  background: var(--color-primary-100);
+}
+
+.hash {
+  font-family: var(--font-mono-face), ui-monospace, monospace;
+  font-size: 0.75rem;
+}
+
+.link {
+  color: var(--color-primary);
+  font-weight: 500;
+  transition: color 0.15s;
+}
+.link:hover {
+  color: var(--color-primary-600);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+input[type="checkbox"] {
+  accent-color: var(--color-primary);
+}
